@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@font-face {
+    font-family:'Thourenz-Inked';
+    src: url(/fonts/Thourenz-Inked.ttf);
+    src:url(/fonts/webfontkit-20221017-093003/thourenz-inked-webfont.woff);
+    src:url(/fonts/webfontkit-20221017-093003/thourenz-inked-webfont.woff2);
+    }
+
+*{
+    --grey-color: #3B3B3B;
+    --white-color: #dbdbdb;
+    box-sizing: border-box;
+}
+
+#video{
+position:absolute;
+min-width:120%;
+min-height:120%;
+z-index:-1;
+object-fit:cover;
+object-position:50% 50%;
+transform:scale(1.2);
+left:-13%;
+top:-13%;
+opacity:30%;
+
+}
+
+body{
+font-family:'Thourenz-Inked';
+box-sizing: border-box;
+overflow:hidden;
+background-color: black;
+color: var(--white-color);
+
+}
+
+.timer-container{
+    display:flex;
+    height:150px;
+    width:730px;
+    margin:auto;
+    justify-content:space-between;
+    align-items: stretch;
+
+
+}
+
+  #timer{
+    font-size: 90px;
+  }
+
+  h1{
+font-size:50px;
+padding-top:25px;
+  }
+
+  
+ 
+  .buttons-container {
+    margin:auto;
+    display:flex;
+    justify-content: center;
+    width:670px;
+    height:60%;
+    flex-wrap:wrap;
+    margin-top:40px;
+    gap:15px;
+
+    
+  }
+
+  .container{
+    position:relative;
+    margin:auto;
+  }
+
+  .img-buttons{
+    float:center;
+    width:150px;
+    height:150px;
+    object-fit: cover;
+    border-radius:50%;
+    border:4px var(--white-color) solid;
+  }
+
+.img-cover{
+    background-color:black;
+    width:150px;
+    height:150px;
+    position:absolute;
+    border-radius:50%;
+    opacity:60%;
+    margin:auto;
+    border:solid var(--white-color) 4px;
+    transition:ease-in 500ms;
+    z-index:2;
+}
+
+.img-cover:hover{
+    opacity:0%;
+    transition:ease-out 500ms;
+    
+}
+
+  .button1{
+position:absolute;
+top:60%;
+left:25%;
+width:30px;
+    height:30px;
+    border:none;
+    border-radius:50%;
+    transition:ease-out 100ms;
+    font-family:'Thourenz-Inked';
+    font-size:26px;
+    font-weight:bold;
+    color:#3B3B3B;
+    z-index:3;
+  }
+
+  .button1:hover{
+    width:33px;
+    height:33px;
+    transition:ease-in 100ms;
+  }
+
+  .button2{
+    position:absolute;
+    top:60%;
+    right:25%;
+    width:30px;
+    height:30px;
+    border:none;
+    border-radius:50%;
+    transition:ease-in 100ms;
+    font-family:'Thourenz-Inked';
+    font-size:26px;
+    font-weight:bold;
+    color:#3B3B3B;
+    z-index:3;
+      }
+
+      .button2:hover{
+        width:27px;
+    height:27px;
+    transition:ease-out 100ms;
+      }
+
+      .hover-text{
+        position:absolute;
+        width:100%;
+        font-size:40px;
+        margin:auto;
+        text-align:center;
+        top:30%;
+      }
+
+      .no-spin{
+        display:block;
+    position: absolute;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%, -50%);
+    z-index: -2;
+    opacity:0%;
+    margin:-263px 0 0 -358px;
+      }
+
+      .add-spin{
+    animation-name: spin-animation;
+    animation-duration:6s;
+    animation-timing-function:linear;
+    animation-iteration-count:1;
+      }
+
+      @keyframes spin-animation{
+        0%{
+          z-index:3;
+          opacity:0.2;
+          transform:scale(0.2) rotate(0deg);
+      }
+  
+      15%{
+        z-index:3;
+          opacity:1;
+          
+          transform:scale(1) rotate(1090deg);
+      }
+  
+      90%{
+        z-index:3;
+          opacity:1;
+          top:50%;
+          transform:scale(1) rotate(1090deg);
+      }
+  
+      100%{
+        z-index:3;
+          top:500%;
+          opacity:1;
+          transform:scale(1) rotate(1090deg);
+      }
+      }
