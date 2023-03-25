@@ -2,8 +2,6 @@
 @font-face {
     font-family:'Thourenz-Inked';
     src: url(../fonts/Thourenz-Inked.ttf);
-    src:url(../fonts/webfontkit-20221017-093003/thourenz-inked-webfont.woff);
-    src:url(../fonts/webfontkit-20221017-093003/thourenz-inked-webfont.woff2);
     }
 
 *{
