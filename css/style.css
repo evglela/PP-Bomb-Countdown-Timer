@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 @font-face {
     font-family:'Thourenz-Inked';
-    src: url(/fonts/Thourenz-Inked.ttf);
-    src:url(/fonts/webfontkit-20221017-093003/thourenz-inked-webfont.woff);
-    src:url(/fonts/webfontkit-20221017-093003/thourenz-inked-webfont.woff2);
+    src: url(../fonts/Thourenz-Inked.ttf);
+    src:url(../fonts/webfontkit-20221017-093003/thourenz-inked-webfont.woff);
+    src:url(../fonts/webfontkit-20221017-093003/thourenz-inked-webfont.woff2);
     }
 
 *{
